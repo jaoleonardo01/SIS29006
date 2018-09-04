@@ -14,7 +14,7 @@ ylabel('s(t)')
 S = fft(s);
 S = abs(S);
 S=fftshift(S);
-freq = Fs*(-(L/2):(L/2)-1)/L;
+freq = Fs*(-(L/200):(L/200)-1)/L;
 subplot(3,1,2),plot(freq,S)
 title('Espectro de Amplitude de s(t)')
 xlabel('f (Hz)')
